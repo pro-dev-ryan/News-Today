@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+}
+.card {
+  @apply bg-stone-100 border-2 border-opacity-30 border-zinc-50 p-2 shadow-lg rounded-lg hover:ring-1 ring-violet-200;
+}
+
+.btn {
+  @apply my-3 mx-2 border border-violet-500 text-violet-700 transform hover:shadow-md duration-300 hover:bg-violet-500 hover:text-white py-1 px-2.5 cursor-pointer mr-5 rounded-md;
+}
+
+.card-content {
+  @apply font-text p-1;
+}
+
+.card-img {
+  @apply h-40 object-cover rounded-t-md;
+}
+.title {
+  @apply font-text text-sm font-semibold;
+}
+.text-content {
+  @apply font-normal tracking-tight leading-tight text-sm;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button class="btn" id="modalBtn">Open</button>
+    <div
+      class="mainBody bg-black bg-opacity-50 relative w-full overflow-hidden flex items-center justify-center"
+      id="overlay"
+    >
+      <div
+        class="modalBody w-1/2 h-screen duration-100 transition-opacity hover:overflow-y-scroll overflow-y-hidden shadow-xl border-2 top-0 right-1/4 border-slate-50 my-10 p-8 bg-stone-50"
+        id="modal"
+      >
+        <div class="modalHeader flex justify-between mb-5 items-center">
+          <h3 class="text-lg font-semibold">Modal Content Title</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="30"
+            height="30"
+            viewBox="0 0 256 256"
+            xml:space="preserve"
+            class="btn"
+            data-bs-dismiss="modal"
+            id="cls"
+            aria-label="Close"
+          >
+            <defs></defs>
+            <g
+              style="
+                stroke: none;
+                stroke-width: 0;
+                stroke-dasharray: none;
+                stroke-linecap: butt;
+                stroke-linejoin: miter;
+                stroke-miterlimit: 10;
+                fill: none;
+                fill-rule: nonzero;
+                opacity: 1;
+              "
+              transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+            >
+              <path
+                d="M 13.4 88.492 L 1.508 76.6 c -2.011 -2.011 -2.011 -5.271 0 -7.282 L 69.318 1.508 c 2.011 -2.011 5.271 -2.011 7.282 0 L 88.492 13.4 c 2.011 2.011 2.011 5.271 0 7.282 L 20.682 88.492 C 18.671 90.503 15.411 90.503 13.4 88.492 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(129, 56, 207);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+              <path
+                d="M 69.318 88.492 L 1.508 20.682 c -2.011 -2.011 -2.011 -5.271 0 -7.282 L 13.4 1.508 c 2.011 -2.011 5.271 -2.011 7.282 0 l 67.809 67.809 c 2.011 2.011 2.011 5.271 0 7.282 L 76.6 88.492 C 74.589 90.503 71.329 90.503 69.318 88.492 z"
+                style="
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-dasharray: none;
+                  stroke-linecap: butt;
+                  stroke-linejoin: miter;
+                  stroke-miterlimit: 10;
+                  fill: rgb(157, 61, 201);
+                  fill-rule: nonzero;
+                  opacity: 1;
+                "
+                transform=" matrix(1 0 0 1 0 0) "
+                stroke-linecap="round"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="modal-body">
+          <div class="info-sec flex justify-between items-end pb-5">
+            <div class="author-sec w-1/3 flex pl-10 items-center space-x-2">
+              <div class="image">
+                <img
+                  class="w-12 h-12 rounded-full"
+                  src="https://images.unsplash.com/photo-1525786210598-d527194d3e9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="author-info">
+                <h5 class="font-semibold">Author Name</h5>
+                <h5 class="text-sm">Published Data</h5>
+              </div>
+            </div>
+            <div class="image h-2/3">
+              <img
+                class="object-cover h-80"
+                src="https://images.unsplash.com/photo-1575727613330-89e234592ddb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="text-content">
+            <p class="h-1/3 shrink-0 px-4 font-sans">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              quibusdam fugit, velit quasi laboriosam saepe provident, ea aut
+              obcaecati eos ad? Saepe, magnam est. Consequuntur repudiandae
+              quisquam tenetur modi cumque quaerat et eligendi placeat vel
+              recusandae molestiae, quas quo, nemo dicta distinctio ex debitis
+              nisi inventore perspiciatis iure fugit quasi consequatur. Natus
+              provident, nostrum itaque minus veritatis eveniet doloremque
+              nulla, eligendi officiis, aperiam rerum nihil libero aliquam
+              praesentium nemo totam nisi deserunt ut odio ullam ducimus
+              obcaecati. Adipisci sequi modi quaerat sint excepturi veniam
+              deleniti sunt non possimus nemo inventore porro ea, autem quam
+              accusantium beatae enim placeat! Cum expedita quaerat in possimus.
+              Nemo numquam cupiditate similique inventore illum unde. Vitae,
+              ipsa iusto et iste possimus quam porro tempora similique vero eum
+              ad nobis, nihil voluptate ex neque excepturi est voluptates
+              repellat mollitia amet numquam magnam. Nobis, dolorem corrupti!
+              Beatae nisi, voluptate ea exercitationem unde autem. Quae at
+              necessitatibus ab dolorum? Nemo unde vitae inventore placeat
+              soluta sit, omnis cumque asperiores eum voluptatem expedita
+              itaque, sequi non beatae! Laboriosam temporibus alias corporis
+              cumque, illum vel! Natus impedit amet quibusdam consequuntur velit
+              sit excepturi, exercitationem praesentium laborum blanditiis.
+              Voluptatibus commodi, eius nobis explicabo, fuga provident
+              veritatis repellat, ipsa nemo quam molestiae deserunt corrupti
+              adipisci fugit? Omnis similique veritatis totam eaque, amet
+              quibusdam cupiditate quam, nesciunt expedita, ipsa doloribus?
+              Excepturi ratione incidunt temporibus veritatis ullam, optio in
+              dolores dolor. Dolores, cumque aperiam eum laudantium facilis ad
+              quidem reiciendis ullam voluptatibus ipsa cum esse est, numquam
+              corrupti totam ab quas deleniti quibusdam nobis similique nisi
+              vero illum. Eaque error architecto dolor odit? Soluta earum
+              impedit qui magni illum quod sapiente eos asperiores est culpa
+              iure consequuntur expedita ex cupiditate eius vel ut, ipsum
+              reiciendis maiores a voluptas dicta ad officiis aliquid. Possimus
+              dicta est eius accusamus iure laborum vero, quidem, amet magni rem
+              unde quaerat ex recusandae consectetur incidunt officiis
+              perferendis cum. Labore, assumenda aperiam dolorem consequatur
+              fugit repellendus sint voluptates eos voluptatum officiis ullam
+              laboriosam natus expedita commodi nihil maxime et sequi quasi illo
+              similique ipsam impedit vitae? Suscipit est quo harum nihil, quam
+              eos sapiente, perferendis magnam beatae fugiat aliquid accusamus
+              illum. Officiis vitae magnam quisquam architecto, ex, omnis quasi
+              reprehenderit molestiae veritatis natus at nam? Reiciendis dolore
+              doloremque laborum quaerat sunt saepe suscipit non culpa vitae?
+              Enim eum commodi molestias, unde quod iste nostrum deleniti
+              maiores vitae. Dolores vel consectetur ex qui aperiam? Neque sit
+              explicabo consequatur, repudiandae sequi aperiam saepe obcaecati
+              voluptatibus quo dignissimos provident hic. Quo odit autem debitis
+              ab earum provident quos sed, aperiam sapiente veniam, rem nam
+              nesciunt at culpa cumque officia modi harum eos vero nisi dolor
+              consectetur? Expedita possimus animi, eaque sit perspiciatis
+              libero eos fuga id consectetur aspernatur, aut magni eveniet.
+              Quia, quo nihil voluptatum veritatis eum error cumque commodi
+              deserunt porro nemo reprehenderit tempore quaerat. Similique sit
+              quidem eum, autem soluta illo explicabo omnis ducimus. Eos impedit
+              beatae culpa laborum sapiente explicabo neque assumenda
+              perferendis iste quasi suscipit amet, non, porro dolor earum
+              doloribus optio, dolorum atque dicta laboriosam tempora velit
+              delectus voluptatibus? Veniam ab voluptas dignissimos reiciendis
+              aliquam enim nostrum, laboriosam maiores vel fuga? Numquam ullam
+              totam, hic accusamus excepturi recusandae nam ratione eum aliquam
+              expedita! Soluta harum sunt, nisi vitae, commodi voluptatibus
+              nesciunt inventore quam illo ratione ad tenetur cumque ducimus non
+              delectus, dolor minima blanditiis id mollitia magnam. Fugiat
+              tempora unde in. Quae ipsam, vitae animi placeat asperiores
+              inventore natus laborum cupiditate blanditiis enim pariatur
+              nesciunt excepturi eum eaque eius maxime. Officiis incidunt, ad
+              quo numquam maxime fugit reprehenderit earum voluptatibus sed
+              vitae, corrupti iste. Maiores praesentium libero voluptatem
+              repellendus incidunt animi magni perspiciatis aut nam dignissimos
+              tempore optio consequatur ex voluptas velit quis, quam dicta.
+              Nemo, libero ut explicabo itaque tempore alias repellendus dolore
+              ex error eveniet? Quod quo perspiciatis maxime rerum quaerat.
+              Error fuga recusandae architecto dicta omnis, dignissimos
+              veritatis pariatur eos, beatae culpa optio voluptatem quasi
+              incidunt. Aliquid, eaque, voluptatum ab rem et velit in iure est
+              minima consectetur quod, officia eveniet. Officiis deleniti quasi,
+              inventore sequi ratione ipsa, deserunt sint, dolore consequuntur
+              alias repudiandae molestias illum id facere saepe! Perspiciatis
+              asperiores eveniet doloribus nemo natus dolor, sunt at atque
+              laboriosam odio error hic? Perspiciatis laudantium fugit, facere
+              fugiat repellat error, accusantium natus suscipit, voluptate animi
+              voluptatibus optio. Possimus omnis veniam quo doloribus tempore
+              consequatur quos voluptate. Impedit rem nulla distinctio velit
+              eaque, exercitationem itaque qui. Architecto facere minima
+              assumenda culpa odit vero nobis mollitia in! Eligendi quo cumque
+              nulla voluptatem tenetur totam officiis, ut est provident
+              exercitationem quisquam pariatur cum aliquam autem, repellat enim
+              dignissimos!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('modalBtn').addEventListener('click', modal);
+        document.getElementById('cls').addEventListener('click', modal);
+      });
+
+      modal = () => {
+        const modal = document.getElementById('modal');
+        const overlay = document.getElementById('overlay');
+        modal.classList.toggle('hidden');
+        overlay.classList.toggle('hidden');
+        overlay.classList.toggle('flex');
+        console.log('ok');
+      };
+    </script>
+  </body>
+</html>

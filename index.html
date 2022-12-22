@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width
+    , initial-scale=1.0"
+    />
+    <!-- -----------------Font- Cdn-------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- -------------Style Sheets--------------------- -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.freepnglogos.com/uploads/globe-png/globe-icons-icons-rrze-icon-3.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/output.css" />
+    <link rel="stylesheet" href="/css/loading.css" />
+    <title>News Today</title>
+  </head>
+
+  <!-- Body Starts -->
+  <body class="bg-gray-100">
+    <header>
+      <nav class="mx-auto">
+        <div
+          class="top-nav mt-2 flex items-center justify-between border-b border-violet-700 border-opacity-10"
+        >
+          <div class="logo pl-2 inline-flex mb-2">
+            <h4
+              class="bg-violet-600 rounded-md my-auto text-white py-.5 px-1.5 font-semibold"
+            >
+              News
+            </h4>
+            <h5 class="pl-1 font-semibold text-xl">Today</h5>
+          </div>
+          <div class="top-nav font-display text-lg font-semibold">
+            <ul class="lg:flex mr-2 items-center hidden">
+              <li class="mr-2 hover:text-violet-700">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="mr-2 hover:text-violet-700"><a href="#">Blog</a></li>
+              <li>
+                <a class="" href="#"
+                  ><img
+                    src="https://images.unsplash.com/photo-1611166819595-ac34987dfa57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=515&q=80"
+                    class="rounded-full w-8 h-8 transform hover:scale-150 duration-500"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-nav border border-black">
+          <button class="border-2 border-rose-800 lg:hidden">
+            mobile-Menu
+          </button>
+          <div class="nav" id="main-nav">
+            <ul
+              id="nav-menu"
+              class="flex space-x-14 pt-5 font-display text-lg font-semibold items-center justify-center"
+            ></ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container mx-auto w-2/3 py-1 px-2.5 rounded-md bg-zinc-50 mt-3 ring-1 ring-slate-200 ring-opacity-30 font-text"
+        id="category-result"
+      ></div>
+    </header>
+    <section class="my-20 loader" id="loader">
+      <div class="cssload-container">
+        <div class="cssload-whirlpool"></div>
+      </div>
+    </section>
+    <main class="container w-9/12 mx-auto mt-5 hidden" id="mainDiv">
+      <section>
+        <div class="sort-section flex justify-between">
+          <div class="inline-flex items-center">
+            <label class="text-lg" for="view">Sort By View:</label>
+            <select
+              class="border border-zinc-100 ml-2 px-1 text-lg bg-zinc-50 rounded-md focus:border-none"
+              name="sortView"
+              id="sortView"
+            >
+              <option>Most Viewed</option>
+              <option>Default</option>
+            </select>
+          </div>
+          <div class="buttons font-display">
+            <button
+              class="bg-violet-500 hover:bg-violet-600 transform hover:shadow-md duration-300 py-1.5 px-2.5 cursor-pointer mr-5 rounded-md text-white"
+            >
+              Today’s Pick
+            </button>
+            <button class="btn">Trending</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          id="newsDiv"
+          class="container w-9/12 mx-auto mt-5 grid grid-cols-3 gap-4"
+        ></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
