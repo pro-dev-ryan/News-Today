@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
-      content="width
+      content="width=
     , initial-scale=1.0"
     />
     <!-- -----------------Font- Cdn-------------------- -->
@@ -24,6 +24,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!-- ------------------Font Awsome----------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- -------------Style Sheets--------------------- -->
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
@@ -34,6 +43,7 @@
       href="https://www.freepnglogos.com/uploads/globe-png/globe-icons-icons-rrze-icon-3.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="/css/nav-menu.css" />
     <link rel="stylesheet" href="/css/output.css" />
     <link rel="stylesheet" href="/css/loading.css" />
     <title>News Today</title>
@@ -42,9 +52,9 @@
   <!-- Body Starts -->
   <body class="bg-gray-100">
     <header>
-      <nav class="mx-auto">
+      <nav class="container mx-auto">
         <div
-          class="top-nav mt-2 flex items-center justify-between border-b border-violet-700 border-opacity-10"
+          class="mt-2 flex items-center justify-between border-b border-violet-700 border-opacity-10"
         >
           <div class="logo pl-2 inline-flex mb-2">
             <h4
@@ -70,15 +80,15 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="main-nav border border-black">
-          <button class="border-2 border-rose-800 lg:hidden">
-            mobile-Menu
+          <button onclick="mobileMenu()" class="lg:hidden mr-2">
+            <i class="fa-solid fa-bars text-lg"></i>
           </button>
+        </div>
+        <div class="main-nav">
           <div class="nav" id="main-nav">
             <ul
               id="nav-menu"
-              class="flex space-x-14 pt-5 font-display text-lg font-semibold items-center justify-center"
+              class="md:flex absolute close w-full md:static right-0 md:space-x-14 pt-5 font-display md:text-lg font-semibold items-center justify-center z-50"
             ></ul>
           </div>
         </div>

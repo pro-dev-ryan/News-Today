@@ -2,3 +2,4 @@ node_modules
 modal.txt
 package.json
 package-lock.json
+.vscode
